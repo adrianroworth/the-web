@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" dir="ltr" lang="en-GB">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Vanilla 0.1.0</title>
+
+		<!-- Tablet Responsive Detection -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+
+		<!-- Basic Meta Data Attributes -->
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Twitter Card -->
+		<!-- https://dev.twitter.com/docs/cards/validation/validator -->
+		<meta name="twitter:card" content="">
+		<meta name="twitter:site" content="">
+		<meta name="twitter:title" content="">
+		<meta name="twitter:description" content="">
+		<meta name="twitter:image" content="">
+
+		<!-- Facebook -->
+		<!-- https://developers.facebook.com/tools/debug/ -->
+		<meta property="og:url" content="">
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<meta property="og:image" content="">
+
+		<!-- Styles -->
+		<!-- build:css /assets/css/styles-0.3.0.min.css -->
+		<link rel="stylesheet" href="/assets/css/styles.css">
+		<!-- /build -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+		<!-- Modernizr -->
+		<!-- build:js /assets/js/modernizr-custom-3.3.1.min.js -->
+		{{!-- <script src="/assets/js/modernizr.js"></script> --}}
+		<!-- /build -->
+
+		<!-- Touch icons and favicon -->
+		{{> favicons }}
+
+	</head>
+
+	<body>
+		
+        {{> site-header }}
+        
+        <main class="site-main" id="site-main">
+		    {{{ body }}}
+        </main>
+        
+		{{> site-footer }}
+
+		<script src="/assets/js/ajax-request.js"></script>
+		<script src="/assets/js/card-selector.js"></script>
+		<script src="/assets/js/scripts.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,39 @@
+@import 'vendor/_normalize';
+@import 'vendor/_h5bp';
+
+@import '_fonts';
+@import '_media-queries';
+@import '_typography';
+@import '_hyperlinks';
+@import '_aspect-ratio';
+
+$global-background-colour: #086D2B;
+$global-colour: #FFFFFF;
+
+html {
+    background: $global-background-colour url('/assets/images/bg.jpg') no-repeat top left 100%;
+    box-shadow: 10px 10px 91px inset #000;
+}
+
+html, body {
+    color: $global-colour;
+    font-family: sans-serif;
+    font-size: 10px;
+    height: 100%;
+}
+#preload-bin,
+#preload-bin > * {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@import 'components/_site-header';
+@import 'components/_site-footer';
+@import 'components/_main';
+@import 'components/_card-table';
+@import 'components/_results';

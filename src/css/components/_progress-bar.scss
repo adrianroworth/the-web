@@ -1,0 +1,56 @@
+.loading-progress {
+    position: fixed;
+    z-index: 1000;
+    background: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: 0.8s ease-in-out opacity;
+
+    &--complete {
+        opacity: 0;
+    }
+    
+    .loading-progress__bar {
+        position: relative;
+        display: block;
+        width: 400px;
+        height: 400px;
+        background: url('/assets/images/throne-empty.png') no-repeat;
+        background-size: 400px;
+    }
+    
+    .loading-progress__bar-track {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        display: block;
+        background: url('/assets/images/throne-full.png') no-repeat;
+        background-size: 400px;
+        transition: 0.3s ease-in-out width;
+    }
+
+    .loading-progress__value {
+        font-family: got;
+        font-size: 2em;
+        color: #FFF;
+
+        .loading-progress__value-number,
+        .loading-progress__value-label {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .loading-progress__value-label {
+            margin-top: 0;
+        }
+    }
+}

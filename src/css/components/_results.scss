@@ -1,0 +1,31 @@
+.results {
+
+    .results__result {
+        margin: 0 0 15px 0;
+        padding: 0;
+    }
+
+    .results__result > .results__result {
+        display: inline-block;
+        
+        + .results__result {
+            margin-left: 20px;
+        }
+    }
+
+    .results__result-title {
+        font-weight: bold;
+        text-decoration: underline;
+        margin-bottom: 8px;
+        font-size: 2rem;
+    }
+
+    .results__result-cards {
+        display: inline-block;
+        margin: 0 5px 5px 0;
+    }
+
+    .results__result-cards-image {
+        height: 150px;
+    }
+}

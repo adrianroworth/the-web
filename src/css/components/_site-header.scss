@@ -1,0 +1,22 @@
+.site-header {
+    margin: 0;
+    padding: 1em;
+    overflow: hidden;
+    text-align: center;
+
+    .site-header__heading {
+        visibility: hidden;
+        position: absolute;
+        right: 100%;
+        bottom: 100%;
+    }
+
+    .site-header__anchor {
+        display: block;
+    }
+
+    .site-header__image {
+        width: 100%;
+        max-width: 200px;
+    }
+}

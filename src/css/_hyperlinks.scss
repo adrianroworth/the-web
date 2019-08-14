@@ -1,0 +1,11 @@
+$anchor-colour: #EEE;
+$anchor-colour-hover: #900;
+
+a {
+    color: $anchor-colour;
+    transition: 0.3s ease-in-out color;
+
+    &:hover {
+        color: $anchor-colour-hover;
+    }
+}

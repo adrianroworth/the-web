@@ -1,0 +1,46 @@
+/* MQ Screen Widths */
+$mediaQuerySmallMin: 1px;
+$mediaQuerySmallMax: 480px;
+
+$mediaQueryMediumMin: $mediaQuerySmallMax + 1px;
+$mediaQueryMediumMax: 680px;
+
+$mediaQueryLargeMin: $mediaQueryMediumMax + 1px;
+$mediaQueryLargeMax: 1000px;
+
+$mediaQueryXLargeMin: $mediaQueryLargeMax + 1px;
+$mediaQueryXLargeMax: 1280px;
+
+$mediaQueryXXLargeMin: $mediaQueryXLargeMax + 1px;
+$mediaQueryXXLargeMax: 9999px;
+
+/* Media Queries */
+// http://www.paulund.co.uk/ios-media-queries-boilerplate
+$mqSmallAndUp: 'only screen';
+$mqSmallAndDown: 'only screen and (max-width: #{$mediaQuerySmallMax})';
+$mqSmallOnly: 'only screen and (min-width: #{$mediaQuerySmallMin}) and (max-width: #{$mediaQuerySmallMax})';
+
+$mqMediumAndUp: 'only screen and (min-width: #{$mediaQueryMediumMin})';
+$mqMediumAndDown: 'only screen and (max-width: #{$mediaQueryMediumMax})';
+$mqMediumOnly: 'only screen and (min-width: #{$mediaQueryMediumMin}) and (max-width: #{$mediaQueryMediumMax})';
+
+$mqLargeAndUp: 'only screen and (min-width: #{$mediaQueryLargeMin})';
+$mqLargeAndDown: 'only screen and (max-width: #{$mediaQueryLargeMax})';
+$mqLargeOnly: 'only screen and (min-width: #{$mediaQueryLargeMin}) and (max-width: #{$mediaQueryLargeMax})';
+
+$mqXLargeAndUp: 'only screen and (min-width: #{$mediaQueryXLargeMin})';
+$mqXLargeAndDown: 'only screen and (max-width: #{$mediaQueryXLargeMax})';
+$mqXLargeOnly: 'only screen and (min-width: #{$mediaQueryXLargeMin}) and (max-width: #{$mediaQueryXLargeMax})';
+
+$mqXXLargeAndUp: 'only screen and (min-width: #{$mediaQueryXXLargeMin})';
+$mqXXLargeAndDown: 'only screen and (max-width: #{$mediaQueryXXLargeMax})';
+
+// This is the same as $mqXXLargeAndUp. Redundant?
+$mqXXLargeOnly: 'only screen and (min-width: #{$mediaQueryXXLargeMin})';
+
+$mqHighDensity: 'only screen and (-webkit-min-device-pixel-ratio: 2)', 'only screen and (min--moz-device-pixel-ratio: 2)', 'only screen and (-o-min-device-pixel-ratio: 2/1)', 'only screen and (min-device-pixel-ratio: 2)', 'only screen and (min-resolution: 192dpi)', 'only screen and (min-resolution: 2dppx)';
+
+$mqLandscape: 'only screen and (orientation: landscape)';
+$mqPortrait: 'only screen and (orientation: portrait)';
+
+$mqPrint: 'only print';
