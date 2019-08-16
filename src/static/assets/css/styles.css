@@ -596,7 +596,6 @@ a {
     padding-top: 56.25%; }
 
 html {
-  background: #086D2B url("/assets/images/bg.jpg") no-repeat top left 100%;
   box-shadow: 10px 10px 91px inset #000; }
 
 html, body {
@@ -646,60 +645,63 @@ html, body {
 .main__heading {
   text-align: center; }
 
-.card-table .card-table__title {
-  text-align: center;
-  font-size: 2rem;
-  margin: 0; }
-
-.card-table .card-table__card-selector-selectors {
-  text-align: center; }
-
-.card-table .card-table__card-selector-selectors-item {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 10px; }
-
-.card-table .card-table__card-selector-selectors-item-select {
-  padding: 10px; }
-
-.card-table .card-table__card-selector-current-selection {
-  text-align: center; }
-
-.card-table .card-table__card-selector-current-selection-image {
-  display: inline-block;
-  max-width: 160px;
-  cursor: pointer; }
-
-.card-table .card-table__card-selector-entire-selection {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #086D2B;
-  display: flex;
-  justify-content: space-around; }
-
-.card-table .card-table__card-selector-actions {
-  position: fixed;
-  bottom: 60px;
-  left: 0;
-  width: 100%;
-  background: #086D2B;
-  display: flex;
-  justify-content: space-around; }
-  .card-table .card-table__card-selector-actions.card-table__card-selector-actions--disabled {
-    display: none; }
-  .card-table .card-table__card-selector-actions .card-table__card-selector-actions-action {
-    display: inline-block;
-    padding: 10px;
+.card-table {
+  /** ***************************************************** */
+  /** non-js rendered stuff start                         * */
+  /** ***************************************************** */
+  /** ***************************************************** */
+  /** non-js rendered stuff end                           * */
+  /** ***************************************************** */ }
+  .card-table .card-table__card-selector-input {
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 2rem; }
+  .card-table .card-table__title {
+    text-align: center;
     font-size: 2rem;
-    color: #FFF;
-    background: #000;
+    margin: 0; }
+  .card-table .card-table__card-selector-selectors {
     text-align: center; }
-
-.card-table .card-table__card-selector-entire-selection-item-image {
-  display: block;
-  height: 60px; }
+  .card-table .card-table__card-selector-selectors-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px; }
+  .card-table .card-table__card-selector-selectors-item-select {
+    padding: 10px; }
+  .card-table .card-table__card-selector-current-selection {
+    text-align: center; }
+  .card-table .card-table__card-selector-current-selection-image {
+    display: inline-block;
+    max-width: 160px;
+    cursor: pointer; }
+  .card-table .card-table__card-selector-entire-selection {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #086D2B;
+    display: flex;
+    justify-content: space-around; }
+  .card-table .card-table__card-selector-actions {
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    background: #086D2B;
+    display: flex;
+    justify-content: space-around; }
+    .card-table .card-table__card-selector-actions.card-table__card-selector-actions--disabled {
+      display: none; }
+    .card-table .card-table__card-selector-actions .card-table__card-selector-actions-action {
+      display: inline-block;
+      padding: 10px;
+      font-size: 2rem;
+      color: #FFF;
+      background: #000;
+      text-align: center; }
+  .card-table .card-table__card-selector-entire-selection-item-image {
+    display: block;
+    height: 60px; }
 
 .results .results__result {
   margin: 0 0 15px 0;

@@ -25,6 +25,8 @@ RUN npm install
 # Bundle app source
 COPY . .
 
+RUN npm rebuild node-sass
+
 # Expose port 4000 inside the container to the outside world
 # so that http://localhost:4000 routes the network traffic to
 # the container

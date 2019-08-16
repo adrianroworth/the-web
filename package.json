@@ -5,10 +5,13 @@
     "main": "./src/index.js",
     "scripts": {
         "start": "node ./src/bin/www",
-        "start:dev": "nodemon -L --inspect=0.0.0.0:9229 -e .js,.json,.njk,.yml,.scss --exec npm run start",
+        "start:dev": "nodemon -L --inspect=0.0.0.0:9229 -e .js,.json,.njk,.yml,.scss --exec npm run build:dev",
+        "start:prod": "npm run build",
         "pretest": "eslint .",
-        "build:run": "npm run sass:build && npm run start",
-        "sass:build": "node-sass -w ./src/css/ -o ./src/static/assets/css/",
+        "build:dev": "npm run sass:dev && npm run start",
+        "build": "npm run sass && npm run start",
+        "sass:dev": "node-sass ./src/css/ -o ./src/static/assets/css/",
+        "sass": "node-sass ./src/css/ -o ./src/static/assets/css/ --output-style compressed",
         "test": "jest",
         "coverage": "jest --coverage"
     },
@@ -37,11 +40,12 @@
         "ejs": "^2.6.1",
         "express": "^4.16.4",
         "express-handlebars": "^3.0.2",
+        "got": "^9.6.0",
         "json-schema-ref-parser": "^7.1.0",
         "lodash.merge": "^4.6.2",
         "path": "^0.12.7",
         "prettier": "^1.18.2",
         "swagger-ui-express": "^4.0.6",
-        "the-transformer": "file:../the-transformer"
+        "the-transformer": "git+https://github.com/adrianroworth/the-transformer.git"
     }
 }
